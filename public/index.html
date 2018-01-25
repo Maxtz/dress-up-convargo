@@ -1,23 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+        <link rel="stylesheet" href="index.css" /> 
     <title>CSS/HTML Workshop with Convargo</title>
+
   </head>
   <body>
+    <h2>CONVARGO</h2>
+    <p>La plateforme permet aux professionnels d'expédier leur marchandise dans toute l'Europe en quelques clics. Renseignez vos besoins d'expédition, obtenez un prix fixe et accédez à plus de 2 500 transporteurs de qualité.<br><br>
+
+    Afin de réaliser un transport de marchandises, veuillez renseigner les informations suivantes :</p>
+  <fieldset>
+    <legend>Who </legend>
+
+
+    
+    <label >The Trucker's company</label><br>
     <div id="trucker">
-      <input class="name" type="text" placeholder="Trucker name"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
-    </div>
-    <div id="shipper">
-      <input class="name" type="text" placeholder="Shipper name"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
+    <input class="name" type="text" placeholder="Trucker name"/></div>
+    <label >The Shipper's name</label><br>
+    <input class="name" type="text" placeholder="Shipper name"/>   
+  </fieldset><br>
+
+  <fieldset>
+    <legend>Kilometers</legend>
+    <label >Inquire the price per kilometer</label><br>
+    <div id="trucker">
+    <input class="price-by-km" type="number" placeholder="Price by km"/></div>
+    <label >The Trucker's company</label><br>
+     <input class="distance" type="number" placeholder="Distance in km"/>
+  </fieldset><br>
+  <fieldset>
+    <legend>Volume</legend>
+    <label >The Trucker's company</label><br>
+    <div id="trucker">
+      <input class="price-by-cubic" type="number" placeholder="Price by m3"/></div>
+      <label >The Trucker's company</label><br>
+   
+     
       <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
+    
+     
+  </fieldset><br>
+ 
+  <fieldset>
+    <legend>Réduction de la franchise de 1000 à 200 €</legend>
+    <label>Deductible option (Check if you want to submit)<input class="option" type="checkbox" placeholder="Deductible option" /></label>
+  </fieldset><br>
+
+    <button id="compute">Soumission de l'envoi</button><br><br>
+
+    <fieldset style="background-color:rgb(0, 51, 0);"   color:rgb(153, 0, 0)><b >
+    
+    <legend style="background-color:rgb(0, 51, 0);"><u>The different results prices</u></legend><br>
     <div id="actors"></div>
     <script src="convargo.js"></script>
     <script src="index.js"></script>
+   </b> </fieldset><br>
   </body>
 </html>
